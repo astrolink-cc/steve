@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { skills } from "../data/skills"
+import { projects } from "../data/projects"
 
 function FaqItem({ question, answer, defaultOpen }: { question: string; answer: string; defaultOpen?: boolean }) {
   const [open, setOpen] = useState(defaultOpen ?? false)
@@ -69,6 +70,30 @@ export default function RightPanel() {
                   ))}
                 </div>
               </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="space-y-6">
+          <h2 className="text-lg font-medium text-zinc-200">
+            Projects
+          </h2>
+          <div className="space-y-4">
+            {projects.map((project) => (
+              <a
+                key={project.name}
+                href={project.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block border border-zinc-800 rounded-sm p-4 hover:border-zinc-600 transition-colors duration-300"
+              >
+                <h3 className="text-sm font-medium text-zinc-200 group-hover:text-zinc-100 transition-colors duration-200">
+                  {project.name}
+                </h3>
+                <p className="mt-1.5 text-sm text-zinc-500 leading-relaxed">
+                  {project.description}
+                </p>
+              </a>
             ))}
           </div>
         </section>

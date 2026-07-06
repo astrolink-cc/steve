@@ -16,6 +16,10 @@ export default function LeftPanel() {
             <br />
             Building Discord bots and web apps.
           </p>
+          <div className="inline-flex items-center gap-1.5 text-xs text-zinc-500">
+            <span className="size-1.5 rounded-full bg-emerald-400/70" />
+            Co-Founder @ AstroLink.cc
+          </div>
         </div>
 
         <div className="flex gap-6">

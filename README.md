@@ -1,32 +1,56 @@
-# React + TypeScript + Vite
+# HologramSteve Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Personal portfolio site built with React 19, TypeScript, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Framework:** React 19 + TypeScript
+- **Build Tool:** Vite 8
+- **Styling:** Tailwind CSS v4
+- **Animations:** Framer Motion
+- **Linting:** Oxlint
+- **Package Manager:** Bun
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+bun install
+bun run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Scripts
+
+| Command | Description |
+|---|---|
+| `bun run dev` | Start dev server with HMR |
+| `bun run build` | Type-check and build for production |
+| `bun run preview` | Preview production build |
+| `bun run lint` | Run Oxlint |
+
+## Project Structure
+
+```
+src/
+├── App.tsx              # Root layout (left + right panels)
+├── main.tsx             # Entry point
+├── index.css            # Global styles & Tailwind
+├── components/
+│   ├── LeftPanel.tsx    # Name, bio, social links
+│   ├── RightPanel.tsx   # Skills, projects, FAQ
+│   └── ui/              # Reusable UI components
+├── data/
+│   ├── projects.ts      # Projects data
+│   └── skills.ts        # Skills data
+└── lib/
+    └── utils.ts         # cn() helper
+```
+
+## Features
+
+- Two-panel dark-themed layout
+- Animated SVG background
+- Skills showcase with categories
+- Project cards
+- FAQ accordion
+- Social links (GitHub & Discord)
+- Responsive design
