@@ -162,7 +162,7 @@ export default function RightPanel() {
           <div className="space-y-3">
             {[
               { q: "Do you work for free?", a: "I'm open to learning opportunities and small projects. Depends on the scope." },
-              { q: "How do I contact you?", a: "DM me on Discord: @hologramsteve or open an issue on my GitHub." },
+              { q: "How do I contact you?", a: <>DM me on Discord: <a href="https://discord.com/users/834792444121448518" target="_blank" rel="noopener noreferrer" className="underline hover:text-zinc-100 transition-colors">@hologramsteve</a> or open an issue on my GitHub.</> },
               { q: "What can you build?", a: "Discord bots, web dashboards, APIs." },
             ].map((faq, i) => (
               <FaqItem key={faq.q} question={faq.q} answer={faq.a} defaultOpen={i === 0} />
