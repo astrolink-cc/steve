@@ -25,14 +25,4 @@ export const projects: Project[] = [
     description: "A wrapper for the studygo.com forum API.",
     href: "https://github.com/HologramSteve/wrts-forum-api",
   },
-  {
-    name: "erlcserverapiwrapper",
-    description: "A simple wrapper for the ER:LC server API.",
-    href: "https://github.com/HologramSteve/erlcserverapiwrapper",
-  },
-  {
-    name: "waffle",
-    description: "A very bad JS coded image format.",
-    href: "https://github.com/HologramSteve/waffle",
-  },
 ]
