@@ -133,21 +133,23 @@ export default function RightPanel() {
                 href={service.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block border border-zinc-800 rounded-sm px-4 py-3 hover:border-zinc-600 transition-colors duration-300"
+                className="group block bg-zinc-800/20 rounded-sm transition-all duration-300 hover:bg-zinc-800/40"
               >
-                <div className="flex items-center justify-between">
-                  <h3 className="text-sm font-medium text-zinc-200 group-hover:text-zinc-100 transition-colors duration-200">
-                    {service.name}
-                  </h3>
-                  {service.tag && (
-                    <span className="text-[10px] uppercase tracking-wider text-zinc-500">
-                      {service.tag}
-                    </span>
-                  )}
+                <div className="px-5 py-4 border-l-2 border-zinc-600 group-hover:border-zinc-400 transition-colors duration-300">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-base font-medium text-zinc-100 group-hover:text-white transition-colors duration-200">
+                      {service.name}
+                    </h3>
+                    {service.tag && (
+                      <span className="text-[10px] uppercase tracking-widest text-zinc-400 bg-zinc-800/60 px-2 py-0.5 rounded">
+                        {service.tag}
+                      </span>
+                    )}
+                  </div>
+                  <p className="mt-1.5 text-sm text-zinc-400 leading-relaxed group-hover:text-zinc-300 transition-colors duration-200">
+                    {service.description}
+                  </p>
                 </div>
-                <p className="mt-1 text-sm text-zinc-500 leading-relaxed">
-                  {service.description}
-                </p>
               </a>
             ))}
           </div>
