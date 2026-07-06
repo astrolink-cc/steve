@@ -6,6 +6,16 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    name: "deepseek-harness",
+    description: "A lightweight harness for the DeepSeek API as a base for systems that use it.",
+    href: "https://github.com/HologramSteve/deepseek-harness",
+  },
+  {
+    name: "deepseek-harness.js",
+    description: "A JavaScript port of the DeepSeek harness.",
+    href: "https://github.com/HologramSteve/deepseek-harness.js",
+  },
+  {
     name: "nyx",
     description: "A system to launch fully autonomous AI agents that live in Discord for different tasks.",
     href: "https://github.com/HologramSteve/nyx",
