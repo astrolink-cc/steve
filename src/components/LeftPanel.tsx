@@ -2,10 +2,13 @@ export default function LeftPanel() {
   return (
     <div className="flex flex-col justify-between h-full p-10 lg:p-14 xl:p-16 select-none">
       <div>
-        <h1 className="text-4xl lg:text-5xl font-light tracking-tight text-zinc-100 leading-[1.1]">
-          Hologram
-          <br />
-          <span className="font-semibold">Steve ☦</span>
+        <h1 className="inline-flex items-start gap-3 text-4xl lg:text-5xl font-light tracking-tight text-zinc-100 leading-[1.1]">
+          <img src="/astrolink.png" alt="AstroLink" className="size-12 lg:size-16 object-contain" />
+          <span>
+            Hologram
+            <br />
+            <span className="font-semibold">Steve ☦</span>
+          </span>
         </h1>
         <div className="inline-flex items-center gap-1.5 text-sm text-zinc-400 mt-3">
           <span className="size-2 rounded-full bg-emerald-400/70" />
